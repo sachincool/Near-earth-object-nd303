@@ -19,6 +19,17 @@ class NearEarthObject(object):
         self.orbits = []
         # TODO: What instance variables will be useful for storing on the Near Earth Object?
 
+    def __eq__(self, other):
+        if not isinstance(other, NearEarthObject):
+            # don't attempt to compare against unrelated types
+            return NotImplemented
+
+        return self.id == other.id
+
+    def __hash__(self):
+        # necessary for instances to behave sanely in dicts and sets.
+        return hash((self.id, self.name))
+
     def __repr__(self):
         """
         Returns info about the object

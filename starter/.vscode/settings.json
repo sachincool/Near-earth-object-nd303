@@ -1,0 +1,14 @@
+{
+    "python.pythonPath": "/Users/crappy/udacity-nd/nd303-c1-advanced-python-techniques-project-starter/starter/venv/bin/python3",
+    "python.formatting.provider": "black",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "test*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true
+}
